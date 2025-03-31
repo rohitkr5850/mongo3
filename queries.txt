@@ -1,0 +1,13 @@
+use Library_DB
+
+db.books.insertMany([
+  { book_id: 1, title: "To Kill a Mockingbird", author: "Harper Lee", genre: "fiction", available: true },
+  { book_id: 2, title: "1984", author: "George Orwell", genre: "fiction", available: false },
+  { book_id: 3, title: "Sapiens", author: "Yuval Noah Harari", genre: "non-fiction", available: true },
+  { book_id: 4, title: "The Da Vinci Code", author: "Dan Brown", genre: "thriller", available: false },
+  { book_id: 5, title: "The Alchemist", author: "Paulo Coelho", genre: "fiction", available: true }
+])
+
+db.books.find().pretty()
+db.books.find({ genre: "fiction" }).pretty()
+db.books.find({ available: true }).pretty()
