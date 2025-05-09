@@ -8,6 +8,6 @@ db.books.insertMany([
   { book_id: 5, title: "The Alchemist", author: "Paulo Coelho", genre: "fiction", available: true }
 ])
 
-db.books.find().pretty()
-db.books.find({ genre: "fiction" }).pretty()
-db.books.find({ available: true }).pretty()
+   db.books.find().pretty()
+   db.books.find({ genre: "fiction" }).pretty()
+   db.books.find({ available: true }).pretty()
